@@ -14,7 +14,7 @@ def run():
 	GPIO.setmode(GPIO.BCM)
 
         # We want pin 18 to be an output pin, and it should start out with a low value.
-	GPIO.setup(24, GPIO.OUT, initial=GPIO.LOW)
+	GPIO.setup(17, GPIO.OUT, initial=GPIO.LOW)
 
 	rospy.init_node("led_blink", anonymous=False)
 
@@ -30,9 +30,9 @@ def timer_callback(event):
         # Toggle the LED state.
 	lit = not lit
 	if lit:
-		GPIO.output(24, 1)
+		GPIO.output(17, 1)
 	else:
-		GPIO.output(24, 0)
+		GPIO.output(17, 0)
 
 
 def main(args):
