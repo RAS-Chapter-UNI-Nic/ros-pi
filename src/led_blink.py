@@ -33,6 +33,7 @@ def timer_callback(event):
 		GPIO.output(17, 1)
 	else:
 		GPIO.output(17, 0)
+		# RAS prueba
 
 
 def main(args):
