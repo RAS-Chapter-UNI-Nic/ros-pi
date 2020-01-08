@@ -22,6 +22,8 @@ def run():
 	rospy.Timer(rospy.Duration(1.0), timer_callback)
         rospy.spin()
 	GPIO.cleanup()
+
+	
 	
 	
 def timer_callback(event):
